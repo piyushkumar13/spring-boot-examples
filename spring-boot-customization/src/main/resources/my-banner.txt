@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------
+Using banner.location in application.properties. But, we can also pass the command-line arg as well.
+Ex- --banner.location=my-banner.txt
+Also, we can use property file other than application.properties by using command-line arg. Ex-
+--spring.config.name=my-application
+Note : command-line args passed will always override any other configuration.
+----------------------------------------------------------------------------------------------------

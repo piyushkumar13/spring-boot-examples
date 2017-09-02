@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: prod
+
+app:
+  name: @app.name@
+  author: @app.author@
+  message: ${system.msg}
+
+project:
+  name: ${app.name}-@project.name@

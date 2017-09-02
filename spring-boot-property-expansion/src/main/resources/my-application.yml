@@ -1,0 +1,9 @@
+mail:
+  host: abc
+  username: piyush
+  password: kumar
+
+db:
+ name: mysqldb
+ username: kumar
+ password: piyush
