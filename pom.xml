@@ -10,6 +10,7 @@
         <module>spring-boot-customization</module>
         <module>spring-boot-servlet-scanning</module>
         <module>spring-boot-property-expansion</module>
+        <module>spring-boot-actuator-example</module>
     </modules>
     <packaging>pom</packaging>
 

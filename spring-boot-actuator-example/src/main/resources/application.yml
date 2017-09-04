@@ -1,0 +1,31 @@
+# Below I am disabling all the endpoints except healt and info. Also, we are changing the /health endpoint to /healthcheck.
+# Also, by default /health is not sensitive so making it sensitive where it will just return status.
+endpoints:
+  enabled: false
+  health:
+    id: healthcheck
+    enabled: true
+    sensitive: true
+  info:
+    enabled : true
+
+#Here we are adding information to the info end points
+info:
+  app:
+    name: Piyush Application
+    description: This is the actuator example.
+    version: 1.0.0
+
+# For security purpose, we can change the port and context path for the actuator apis by the following property.
+management:
+  port: 8000
+  context-path: /my-actuator
+
+# By adding spring security dependency, acutator initiates the basic authentication by default with username "user" and
+# and password - which gets logged in the console. But, we can set our own username and password for the sensitive apis.
+# When we set our own username and password, the password does not get logged in the console.
+
+security:
+  user:
+    name: piyush
+    password: kumar
