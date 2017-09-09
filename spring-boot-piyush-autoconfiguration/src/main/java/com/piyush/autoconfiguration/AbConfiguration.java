@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by piyushkumar on 09/09/17.
  *
  * Consider we have defined two autoconfiguration which is returning/registering same Employee object. But one with ConditionalOnClass
- * annotation i.e MyAutoconfiguration class in this project and another one with ConditionalOnMissingClass i.e AnotherConfiguration
+ * annotation i.e AbConfiguration class in this project and another one with ConditionalOnMissingClass i.e AnotherConfiguration
  * class in this project. Then following happens :
  * First, ConditionalOnMissingClass autoconfiguration gets loaded(irrespective of the order in which the autoconfiguration defined in
  * spring.factories), then ConditionalOnClass autoconfiguration gets loaded. Hence, ConditionalOnClass autoconfiguration overrides
