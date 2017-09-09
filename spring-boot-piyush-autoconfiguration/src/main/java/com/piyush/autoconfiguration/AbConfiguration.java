@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * class in this project. Then following happens :
  * First, ConditionalOnMissingClass autoconfiguration gets loaded(irrespective of the order in which the autoconfiguration defined in
  * spring.factories), then ConditionalOnClass autoconfiguration gets loaded. Hence, ConditionalOnClass autoconfiguration overrides
- * ConditionalOnMissingClass autoconfiguration. But, there we can make it to load ConditionalOnClass autoconfiguration and then
+ * ConditionalOnMissingClass autoconfiguration. But, there we can make it to load ConditionalOnClass autoconfiguration first and then
  * ConditionalOnMissingClass autoconfiguration by using AutoConfigureAfter and AutoConfigurebefore.
  * <p/>
  * If both the autoconfiguration classes using ConditionalOnClass/ConditionalOnMissingClass, then it won't consider the order in which
