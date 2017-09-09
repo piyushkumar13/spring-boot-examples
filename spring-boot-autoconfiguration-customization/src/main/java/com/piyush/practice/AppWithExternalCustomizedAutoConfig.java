@@ -11,6 +11,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * For this module, I have created another project('spring-boot-piyush-autoconfiguration') as an external jar which I
  * have added in the dependency of this module. This dependency contains the external customized autoconfigurations.
+ * 'spring-boot-piyush-autoconfiguration' project , just for reference, I have added to this project('spring-boot-examples')
+ * as a directory i.e its not a maven module of this project.
  * */
 @SpringBootApplication
 public class AppWithExternalCustomizedAutoConfig {
