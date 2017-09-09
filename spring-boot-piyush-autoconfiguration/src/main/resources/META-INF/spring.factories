@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.piyush.autoconfiguration.AbConfiguration,com.piyush.autoconfiguration.AnotherConfiguration
+
+
+
