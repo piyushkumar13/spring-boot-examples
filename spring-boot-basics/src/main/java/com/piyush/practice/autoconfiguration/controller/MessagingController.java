@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by piyushkumar on 29/08/17.
+ * @Author Piyush Kumar
+ * @Date 11/01/2018
  */
-
 @RestController
 public class MessagingController {
 

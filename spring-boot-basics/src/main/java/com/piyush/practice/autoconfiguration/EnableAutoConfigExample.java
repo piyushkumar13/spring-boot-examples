@@ -7,10 +7,15 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 /**
- * Created by piyushkumar on 29/08/17.
+ * @Author Piyush Kumar
+ *
+ * @EnableAutoConfiguration is like @Configuration but with some extra capabilities i.e it binds the configurations with
+ * the spring context based on the jars present in the class path. @EnableAutoConfiguration is the superset of the
+ * @Configuration
+ *
  */
-
-@EnableAutoConfiguration
+@EnableAutoConfiguration //This Configuration will be loaded by the AnnotationConfigApplicationContext which is registered
+// by the statement SpringApplication.run(...) statement.
 public class EnableAutoConfigExample {
 
     @Bean
